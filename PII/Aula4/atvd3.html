@@ -10,19 +10,19 @@
     <h3>Envie uma mensagem preenchendo o formulário</h3>
 
     <form action="post">
-    <label for="">Seu Nome:</label>
-    <input type="text" name="nome" placeholder="Digite seu nome*"><br>
-    <label for="">Seu Telefone:</label>
-    <input type="tel" name="telefone" placeholder="Digite seu Telefone"><br>
-    <label for="">Seu E-mail:</label>
-    <input type="email" name="email" placeholder="Digite seu E-mail*"><br>
-    <label for="">Deseja receber nossas novidades?</label>
-    <input type="radio" name="novidades" value="Sim">
+    <label for="nome">Seu Nome:</label>
+    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required><br>
+    <label for="telefone">Seu Telefone:</label>
+    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone"><br>
+    <label for="email">Seu E-mail:</label>
+    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required><br>
+    <label for="novidades">Deseja receber nossas novidades?</label>
+    <input type="radio" name="novidades" id="novidades" value="Sim">
     <label for="">Sim</label>
-    <input type="radio" name="novidades" value="Nao">
+    <input type="radio" name="novidades" id="novidades" value="Nao">
     <label for="">Não</label><br>
-    <label for="">Sua mensagem:</label>
-    <textarea name="mensagem" placeholder="Mensagem*" id=""></textarea><br>
+    <label for="mensagem">Sua mensagem:</label>
+    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" id="" required></textarea><br>
 
     <input type="submit" value="Enviar">
     </form>
