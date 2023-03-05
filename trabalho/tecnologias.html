@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Abre o documento HTML -->
+<html lang="pt-br"> <!-- Define linguagem português do Brasil -->
+<head> <!-- Abre a tag head -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres UTF 8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Abre a tag meta e passa configurações de compatibilidade de navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Abre a tag meta e passa configurações de escala -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Chama o arquivo CSS -->
+    <title>Tecnologias</title> <!--Titulo da página -->
+</head> <!-- Fecha a tag head -->
+<body>
+    <nav id="menu"><!-- Abre a tag nav com o id menu que é tratado no CSS -->
+        <ul> <!-- Abre a tag ul - lista -->
+            <li> <a href="index.html" onmouseenter="mudarCorP()" onmouseleave="mudarCorB()"> Home </a></li> <!-- Item da lista (li) com um link (a) e dois enventos JS (onmouseenter e onmouseleave) -->
+            <li> <a href="tecnologias.html" onmouseenter="mudarCorP1()" onmouseleave="mudarCorB1()"> Tecnologias</a></li>
+            <li> <a href="produtos.html" onmouseenter="mudarCorP2()" onmouseleave="mudarCorB2()"> Produtos </a></li>
+            <li> <a href="contato.html" onmouseenter="mudarCorP3()" onmouseleave="mudarCorB3()"> Contato </a></li>
+        </ul> <!-- Fecha a tag ul - lista -->
+    </nav> <!-- Fecha a tag nav -->
+    <script> //Abre a tag script para inserir códigos JS no documento
+        function mudarCorP(){ // Função mudarcorP para mudar a cor da letra para preto quando o mouse estiver sobre (onmouseenter)
+        document.getElementsByTagName('a')[0].style.color = 'black';
+        }
+        function mudarCorP1(){
+        document.getElementsByTagName('a')[1].style.color = 'black';
+        }
+        function mudarCorP2(){
+        document.getElementsByTagName('a')[2].style.color = 'black';
+        }
+        function mudarCorP3(){
+        document.getElementsByTagName('a')[3].style.color = 'black';
+        }
+        function mudarCorB(){ // Função mudarCorB para mudar a cor da letra para branco quando o mouse estiver fora (onmouseleave)
+        document.getElementsByTagName('a')[0].style.color = 'white';
+        }
+        function mudarCorB1(){
+        document.getElementsByTagName('a')[1].style.color = 'white';
+        }
+        function mudarCorB2(){
+        document.getElementsByTagName('a')[2].style.color = 'white';
+        }
+        function mudarCorB3(){
+        document.getElementsByTagName('a')[3].style.color = 'white';
+        }
+    </script> <!-- Fechamento da tag Script -->
+    
+    <br><h3 id="texto-h2h3">Tecnologias utilizadas no desenvolvimento dos sites</h3> <!-- Abre e fecha a tag h3 com um id texto-h2h3 que é tratado no CSS -->
+    <div> <!-- Abre a tag div-->
+        <br> <!-- Abre a tag br -->
+        <img src="/trabalho/img/html.jpg" onclick="texto()" id="ehtml" alt="" width="80px" height="80px"> <!-- Abre a tag img com o evento JS onclick que apresenta um texto quando é clicado na imagem, também possui id ehtml que é tratado no CSS -->
+        <h4 id="html"></h4>  <!-- Abre e fecha a tag h4 com um id html para chamar no JS e apresetar o texto citado acima -->
+        <br> <!-- Fecha a tag br -->
+        <img src="/trabalho/img/css.jpg" onclick="texto1()" id="ecss" alt="" wwidth="80px" height="80px">
+        <h4 id="css"></h4>
+        <br>
+        <img src="/trabalho/img/js.jpg" onclick="texto2()" id="ejs" alt="" width="80px" height="80px">
+        <h4 id="js"></h4>
+        <br>
+        <img src="/trabalho/img/php.jpg" onclick="texto3()" id="ephp" alt="" width="80px" height="80px">
+        <h4 id="php"></h4>
+        <br>
+        <img src="/trabalho/img/wordpress.jpg" onclick="texto4()" id="eword" alt="" width="80px" height="80px">
+        <h4 id="wordpress"></h4>
+        <br>
+        <img src="/trabalho/img/mysql.jpg" onclick="texto5()" id="emysql" alt="" width="80px" height="80px">
+        <h4 id="mysql"></h4>
+        <p></p> <!-- Abre e fecha a tag p somente para questão de visualização do site -->
+    </div> <!-- Fecha a tag div-->
+
+    <script> //Abre a tag script para inserir códigos JS no documento
+        function texto() { // Função texto para apresetar um texto html quando foi clicado na imagem.
+            document.getElementById("html").innerHTML = "HTML é uma linguagem de marcação utilizada na construção de páginas Web.";
+        }
+        function texto1() {
+            document.getElementById("css").innerHTML = "CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML.";
+        }
+        function texto2() {
+            document.getElementById("js").innerHTML = "JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web.";
+        }
+        function texto3() {
+            document.getElementById("php").innerHTML = "PHP é uma linguagem de programação para o desenvolvimento de aplicações.";
+        }
+        function texto4() {
+            document.getElementById("wordpress").innerHTML = "O WordPress é um CMS, utilizado para administrar sites, blogs, lojas virtuais, etc.";
+        }
+        function texto5() {
+            document.getElementById("mysql").innerHTML = " MySQL é um banco de dados relacional livre e de código aberto.";
+        }
+    </script> <!-- Fechamento da tag Script -->
+ 
+</body>
+</html>

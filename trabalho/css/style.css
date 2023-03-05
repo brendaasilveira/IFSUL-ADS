@@ -1,0 +1,117 @@
+* { /*seletor universal*/
+    margin: 0; /*define a área da margem*/
+    padding: 0; /*define a área de preenchimento de um elemento*/
+    font-family: 'Open Sans', sans-serif; /*define a fonte*/
+}
+#imginicio{ /*estilização do id imginicio definido na index do html*/
+    width: 45%; /*largura*/
+    float: right;/*elemento flutuando na direita*/
+    margin-top: 30px; /*margem do topo*/
+}
+#whatsApp{ /*estilização do id whatsApp definido na index do html*/
+    text-align: center; /*define alinhamento no centro*/
+    margin-left: 25%; /*margem da esquerda*/
+}
+#h1inicio{ /*estilização do id h1inicio definido na index do html*/
+    margin-top: 100px; /*margem do topo*/
+    text-align: center; /*define alinhamento no centro*/
+}
+#menu{ /*estilização do id menu utilizado no menu de navegadação da página */
+    background-color: #6495ED; /*define a cor do fundo*/
+}
+ul{ /*estilização da lista do menu*/
+    margin-left: 5%; /*margem da esquerda*/
+    list-style: none; /*retira o estilo padrão da lista*/
+}
+ul li{ /*estilização da lista do menu*/
+    display: inline; /*renderiza o elemento inline, dentro do bloco na mesma linha*/
+}
+ul li a{ /*estilização da lista do menu na parte de links definidos pela tag a */
+    color: white; /*define a cor da letra*/
+    padding: 20px; /*define a área de preenchimento de um elemento*/
+    display: inline-block; /*define largura e altura no elemento*/ 
+    text-decoration: none; /*retira o estilo padrão da lista*/
+}
+ul li a:hover{ /*estilização da lista do menu na parte de links definifos pela tag a faz com que ao passar o mouse em cima de um link do menu mude a cor*/
+    background-color: #FFB6C1; /*define a cor do fundo do link*/
+}
+
+iframe{ /*estilização do iframe na index do html */
+    text-align: center; /*define alinhamento no centro*/
+    margin-top: 10px; /*margem do topo*/
+    margin-left:12%; /*margem da esquerda*/
+    margin-right: 10%; /*margem da direita*/
+}
+#texto-h2h3{ /*estilização dos elementos h2 e h3*/
+    text-align: center; /*define alinhamento no centro*/
+    font-size: 20px; /*define o tamanho da fonte*/
+}
+#ehtml, #ecss, #ejs, #ephp, #eword, #emysql{ /*estilização dos ids definifos na tecnologias do html*/
+    background-color: white; /*define a cor do fundo*/
+    border: 1px solid #ccc; /*define o tamanho e a cor da borda dos elementos*/
+    border-radius: 4px; /*define a borda arredondada*/
+    color: white; /*define a cor da letra*/
+    text-align: center; /*define alinhamento no centro*/
+    display: inline; /*renderiza o elemento inline, dentro do bloco na mesma linha*/
+    margin-left: 50%; /*margem da esquerda*/
+    margin-top: 2%; /*margem do topo*/
+}
+table, th, td{ /*estilização da tabela em produtos do html nos elementos table, th e td*/
+    border: 1px solid black; /*define o tamanho e a cor da borda dos elementos*/
+} 
+table{ /*estilização da tabela em produtos do html*/
+    border-collapse: collapse;
+    margin: auto;
+}
+th, td{ /*estilização da tabela em produtos do html nos elementos th e td*/
+    padding: 5px; /*define a área de preenchimento de um elemento*/
+    text-align: center; /*define alinhamento no centro*/
+    width: 400px; /*largura*/
+    background-color: #FFF0F5; /*define a cor do fundo*/
+}
+h4,h5{ /*estilização das tags h4 e h5*/
+    text-align: center; /*define alinhamento no centro*/
+    margin: 5px; /*define a área da margem*/
+}
+p{ /*estilização das tags p*/
+    text-align: center; /*define alinhamento no centro*/
+}
+input[type=text], [type=email], [type=tel], textarea{ /*estilização dos inputs e do textarea no contato do html*/
+    width: 50%; /*largura*/
+    padding: 10px; /*define a área de preenchimento de um elemento*/
+    border: 1px solid #ccc; /*define o tamanho e a cor da borda dos elementos*/
+    border-radius: 4px; /*define a borda arredondada*/
+    font-size: 15px; /*define o tamanho da fonte*/
+    margin-left: 20%; /*margem da esquerda*/
+    margin-right: 20%; /*margem da direita*/
+} 
+select{ /*estilização do select no contato do html*/
+    width: 50%; /*largura*/
+    padding: 10px; /*define a área de preenchimento de um elemento*/
+    border: 1px solid #ccc; /*define o tamanho e a cor da borda dos elementos*/
+    border-radius: 4px; /*define a borda arredondada*/
+    font-size: 15px; /*define o tamanho da fonte*/
+    margin-left: 20%; /*margem da esquerda*/
+    margin-right: 20%; /*margem da direita*/
+}
+label{ /*estilização das labels*/
+    width: 50%; /*largura*/
+    padding: 10px; /*define a área de preenchimento de um elemento*/
+    text-align: center; /*define alinhamento no centro*/
+    font-size: 15px; /*define o tamanho da fonte*/
+    margin-left: 20%; /*margem da esquerda*/
+    margin-right: 20%; /*margem da direita*/
+}
+input[type=submit]{ /*estilização do input com type submit no contato do html*/
+    width: 5%; /*largura*/
+    background-color: #6495ED; /*define a cor do fundo*/
+    color: white; /*define a cor da letra*/
+    padding: 12px 20px; /*define a área de preenchimento de um elemento*/
+    border: none; /*remove a borda*/
+    border-radius: 4px; /*define a borda arredondada*/
+    cursor: pointer; /*define o cursor ao colocar o mouse em cima do botão*/
+    font-size: 15px; /*define o tamanho da fonte*/
+    margin-left: 45%; /*margem da esquerda*/
+    margin-right: 45%; /*margem da direita*/
+
+}

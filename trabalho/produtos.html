@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- Abre o documento HTML -->
+<html lang="pt-br"> <!-- Define linguagem português do Brasil -->
+<head> <!-- Abre a tag head -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres UTF 8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Abre a tag meta e passa configurações de compatibilidade de navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Abre a tag meta e passa configurações de escala -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Chama o arquivo CSS -->
+    <title>Produtos</title> <!--Titulo da página -->
+</head> <!-- Fecha a tag head -->
+
+<body>
+    <nav id="menu"> <!-- Abre a tag nav com o id menu que é tratado no CSS -->
+        <ul> <!-- Abre a tag ul - lista -->
+            <li> <a href="index.html" onmouseenter="mudarCorP()" onmouseleave="mudarCorB()"> Home </a></li> <!-- Item da lista (li) com um link (a) e dois enventos JS (onmouseenter e onmouseleave) -->
+            <li> <a href="tecnologias.html" onmouseenter="mudarCorP1()" onmouseleave="mudarCorB1()"> Tecnologias</a></li>
+            <li> <a href="produtos.html" onmouseenter="mudarCorP2()" onmouseleave="mudarCorB2()"> Produtos </a></li>
+            <li> <a href="contato.html" onmouseenter="mudarCorP3()" onmouseleave="mudarCorB3()"> Contato </a></li>
+        </ul> <!-- Fecha a tag ul - lista -->
+    </nav> <!-- Fecha a tag nav -->
+    <script> //Abre a tag script para inserir códigos JS no documento
+        function mudarCorP(){ // Função mudarcorP para mudar a cor da letra para preto quando o mouse estiver sobre (onmouseenter)
+        document.getElementsByTagName('a')[0].style.color = 'black';
+        }
+        function mudarCorP1(){
+        document.getElementsByTagName('a')[1].style.color = 'black';
+        }
+        function mudarCorP2(){
+        document.getElementsByTagName('a')[2].style.color = 'black';
+        }
+        function mudarCorP3(){
+        document.getElementsByTagName('a')[3].style.color = 'black';
+        }
+        function mudarCorB(){ // Função mudarCorB para mudar a cor da letra para branco quando o mouse estiver fora (onmouseleave)
+        document.getElementsByTagName('a')[0].style.color = 'white';
+        }
+        function mudarCorB1(){
+        document.getElementsByTagName('a')[1].style.color = 'white';
+        }
+        function mudarCorB2(){
+        document.getElementsByTagName('a')[2].style.color = 'white';
+        }
+        function mudarCorB3(){
+        document.getElementsByTagName('a')[3].style.color = 'white';
+        }
+    </script> <!-- Fechamento da tag Script -->
+    
+    <br><h2 id="texto-h2h3">Confira nossos produtos</h2> <!-- Abre e fecha a tag h2 -->
+
+    <br><h3 id="texto-h2h3">Criação de Sites</h3> <!-- Abre e fecha a tag h3 -->
+    <!-- Abaixo há um tabela tr define as linhas, th são colunas, td são as células -->
+        <br><table> <!-- Abre a tag table -->
+            <tr> <!-- Abre a tag tr -->
+                <th>Tipo de Serviço</th> <!-- Abre e fecha a tag th -->
+                <th>Incluso</th>
+                <th>Valor</th>
+            </tr> <!-- Fecha a tag h2 -->
+            <tr>
+                <td>Landing Page</td>
+                <td>Está incluso a criação de uma página estilizada para venda dos seus produtos</td>
+                <td>R$ 1000,00 - Para criação</td>
+            </tr>
+            <tr>
+                <td>Site Simples</td>
+                <td>Abrange a criação de três páginas: Apresentação do negócio; Página de contato com formulário; Página simples da sua escolha.</td>
+                <td>R$ 2000,00 - Para criação</td>
+            </tr>
+            <tr>
+                <td>E-commerce</td>
+                <td>Abrange a criação do seu E-commerce completa, incluindo o cadastro dos protudos, integração com gatway de pagamento, estilização, e etc.</td>
+                <td>R$ 3500,00 - Para criação</td>
+            </tr>
+        </table>
+    <h5>*A compra do domínio e taxas de hospedagem não estão inclusas.</h5> <!-- Abre e fecha a tag h5 -->
+
+    <br><h3 id="texto-h2h3"> E-mails </h3>
+        <br><table>
+            <tr>
+                <th>Caixa de E-mail</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>5 GB</td>
+                <td>R$ 8,00/mês</td>
+            </tr>
+            <tr>
+                <td>15 GB</td>
+                <td>R$ 16,00/mês</td>
+            </tr>
+            <tr>
+                <td>50 GB</td>
+                <td>R$ 25,00/mês</td>
+            </tr>
+        </table>
+    <h5>*Há uma taxa para criação dos e-mails, e varia de acordo com a quantidade de caixas</h5>
+      
+    <br><h3 id="texto-h2h3">Prestação de Suporte</h3>
+    <p>Você tem a opção de contratar meu suporte de forma recorrente, e me acionar caso tenha qualquer problema com seu site ou e-mail, o valor desse suporte é R$ 500,00/mês</p> <!-- Abre e fecha a tag p -->
+
+</body>
+</html> 

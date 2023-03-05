@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Abre o documento HTML -->
+<html lang="pt-br"> <!-- Define linguagem português do Brasil -->
+<head> <!-- Abre a tag head -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres UTF 8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Abre a tag meta e passa configurações de compatibilidade de navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Abre a tag meta e passa configurações de escala -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Chama o arquivo CSS -->
+    <title>Home</title> <!--Titulo da página -->
+</head> <!-- Fecha a tag head -->
+<body onload="mensagem()"> <!-- Abre a tag body com o evento JS onload emitindo uma mensagem -->
+    <nav id="menu"> <!-- Abre a tag nav com o id menu que é tratado no CSS -->
+        <ul> <!-- Abre a tag ul - lista -->
+            <li> <a href="index.html" onmouseenter="mudarCorP()" onmouseleave="mudarCorB()"> Home </a></li> <!-- Item da lista (li) com um link (a) e dois enventos JS (onmouseenter e onmouseleave) -->
+            <li> <a href="tecnologias.html" onmouseenter="mudarCorP1()" onmouseleave="mudarCorB1()"> Tecnologias</a></li>
+            <li> <a href="produtos.html" onmouseenter="mudarCorP2()" onmouseleave="mudarCorB2()"> Produtos </a></li>
+            <li> <a href="contato.html" onmouseenter="mudarCorP3()" onmouseleave="mudarCorB3()"> Contato </a></li>
+        </ul> <!-- Fecha a tag ul - lista -->
+    </nav> <!-- Fecha a tag nav -->
+    <script> //Abre a tag script para inserir códigos JS no documento
+        function mudarCorP(){ // Função mudarcorP para mudar a cor da letra para preto quando o mouse estiver sobre (onmouseenter)
+        document.getElementsByTagName('a')[0].style.color = 'black';
+        }
+        function mudarCorP1(){
+        document.getElementsByTagName('a')[1].style.color = 'black';
+        }
+        function mudarCorP2(){
+        document.getElementsByTagName('a')[2].style.color = 'black';
+        }
+        function mudarCorP3(){
+        document.getElementsByTagName('a')[3].style.color = 'black';
+        }
+        function mudarCorB(){ // Função mudarCorB para mudar a cor da letra para branco quando o mouse estiver fora (onmouseleave)
+        document.getElementsByTagName('a')[0].style.color = 'white';
+        }
+        function mudarCorB1(){
+        document.getElementsByTagName('a')[1].style.color = 'white';
+        }
+        function mudarCorB2(){
+        document.getElementsByTagName('a')[2].style.color = 'white';
+        }
+        function mudarCorB3(){
+        document.getElementsByTagName('a')[3].style.color = 'white';
+        }
+        function mensagem() { //Função mensagem que é carregada quando o body carrega, emite um alert com "Bem vindo ao site"
+            alert("Bem vindo ao site!");
+        }
+        function whatsapp() { //Função WhatsApp para quando houve um clique duplo na imagem de WhatsApp redireionar para um novo link que dá acesso ao meu WhatsApp
+            window.open('https://contate.me/brengives');
+        }
+    </script> <!-- Fechamento da tag Script -->
+
+    <div id="inicio"> <!-- Abre a tag div com o id inicio que é tratado no CSS -->
+        <img src="/trabalho/img/inicio.jpg" alt="" id="imginicio"> <!-- Abre a tag img e chama uma imagem -->
+        <h1 id="h1inicio">Criação de Sites, E-commerce e E-mails Profissionais</h1> <!-- Abre a tag h1 e fecha  -->
+        <br><p>Com um site profissional você pode gerar muito mais receita para sua empresa.</p> <!-- Abre a tag p e fecha -->
+        <p>Me contate clicando no ícone do WhatsApp para mais detalhes</p> <!-- Abre a tag p e fecha -->
+        <br><img ondblclick="whatsapp()" src="/trabalho/img/whatsapp.jpg" alt="" width="80px" height="80px" id="whatsApp"></a> <!-- Abre a tag img com o evento JS ondblclick que redireciona para outro link no click duplo-->
+    </div> <!-- Fecha a tag div -->
+
+    <div> <!-- Abre a tag div-->
+        <br><h3 id="texto-h2h3">Você sabe como funciona a internet? Veja abaixo.</h3> <!-- Abre a tag h3 e fecha  -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TNQsmPf24go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!-- Abre e fecha a tag iframe que chama um vídeo do YouTube -->
+    </div> <!-- Fecha a tag div -->
+    
+</body> <!-- Fecha a tag body -->
+</html> <!-- Fecha a tag html -->

@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- Abre o documento HTML -->
+<html lang="pt-br"> <!-- Define linguagem português do Brasil -->
+<head> <!-- Abre a tag head -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres UTF 8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Abre a tag meta e passa configurações de compatibilidade de navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Abre a tag meta e passa configurações de escala -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Chama o arquivo CSS -->
+    <title>Contato</title> <!--Titulo da página -->
+</head> <!-- Fecha a tag head -->
+
+<body>
+    <nav id="menu"> <!-- Abre a tag nav com o id menu que é tratado no CSS -->
+        <ul> <!-- Abre a tag ul - lista -->
+            <li> <a href="index.html" onmouseenter="mudarCorP()" onmouseleave="mudarCorB()"> Home </a></li> <!-- Item da lista (li) com um link (a) e dois enventos JS (onmouseenter e onmouseleave) -->
+            <li> <a href="tecnologias.html" onmouseenter="mudarCorP1()" onmouseleave="mudarCorB1()"> Tecnologias</a></li>
+            <li> <a href="produtos.html" onmouseenter="mudarCorP2()" onmouseleave="mudarCorB2()"> Produtos </a></li>
+            <li> <a href="contato.html" onmouseenter="mudarCorP3()" onmouseleave="mudarCorB3()"> Contato </a></li>
+        </ul> <!-- Fecha a tag ul - lista -->
+    </nav> <!-- Fecha a tag nav -->
+    <script> //Abre a tag script para inserir códigos JS no documento
+        function mudarCorP(){ // Função mudarcorP para mudar a cor da letra para preto quando o mouse estiver sobre (onmouseenter)
+        document.getElementsByTagName('a')[0].style.color = 'black';
+        }
+        function mudarCorP1(){
+        document.getElementsByTagName('a')[1].style.color = 'black';
+        }
+        function mudarCorP2(){
+        document.getElementsByTagName('a')[2].style.color = 'black';
+        }
+        function mudarCorP3(){
+        document.getElementsByTagName('a')[3].style.color = 'black';
+        }
+        function mudarCorB(){ // Função mudarCorB para mudar a cor da letra para branco quando o mouse estiver fora (onmouseleave)
+        document.getElementsByTagName('a')[0].style.color = 'white';
+        }
+        function mudarCorB1(){
+        document.getElementsByTagName('a')[1].style.color = 'white';
+        }
+        function mudarCorB2(){
+        document.getElementsByTagName('a')[2].style.color = 'white';
+        }
+        function mudarCorB3(){
+        document.getElementsByTagName('a')[3].style.color = 'white';
+        }
+    </script> <!-- Fechamento da tag Script -->
+    
+    <br><h3 id="texto-h2h3">Entre em contato conosco para um orçamento</h3> <!-- Abre e fecha a tag h3 com um id texto-h2h3 que é tratado no CSS -->
+    <div> <!-- Abre a tag div-->
+    <br><form action="" onsubmit="funcenvio()"> <!-- Abre a tag form com o evento JS onsubmit para efetuar uma ação após ser enviado o formulário-->
+        <label>Nome:</label> <!-- Abre e fecha uma tag label -->
+        <input type="text" required name="nome" placeholder="Digite seu nome" maxlength="200" id="focoinput" onfocus="foco()"> <!-- Abre a tag input com tipo texto, campo obrigatório "required", define o máximo de caracteres em (maxlength), possui um id para tratar no JS e o envento JS onfocus que coloca o elemento em foco -->
+        <br><label>Estado:</label>
+        <select id="selecaoentrada" onInput="entrada()"> <!-- Abre a tag select com um id para tratar no JS e um envento onInput que recebe o valor do input -->
+            <option value="RS">RS</option> <!-- Abre e fecha option -->
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="Outro">Outro</option>
+        </select> <!-- Fecha a tag select -->
+        <br><p id="selecao"></p> <!-- Abre e fecha uma tag p com id selecao que será tratado no JS  -->
+        <br><label>E-mail:</label> <!-- Abre e fecha uma tag label -->
+        <input type="email" required name="email" placeholder="Digite seu e-mail" id="focoinput1" onfocus="foco1()"> <!-- Abre e fecha a tag input com tipo email, campo obrigatório "required", possui um id para tratar no JS e o envento JS onfocus que coloca o elemento em foco -->
+        <br><label>WhatsApp:</label> <!-- Abre e fecha uma tag label -->
+        <input type="tel" placeholder="Digite seu WhatsApp" id="focoinput2" onfocus="foco2()"> <!-- Abre e fecha a tag input com tipo tel, possui um id para tratar no JS e o envento JS onfocus que coloca o elemento em foco -->
+        <br><label>Sua mensagem:</label> <!-- Abre e fecha uma tag label -->
+        <br><textarea name="textoarea" cols="30" rows="10" required name="mensagem" placeholder="Digite sua mensagem" maxlength="400" id="focoinput3" onfocus="foco3()"></textarea> <!-- Abre e fecha a tag textarea, campo obrigatório "required", define o máximo de caracteres em (maxlength) e o tamanho da caixa em (cols e rows), possui um id para tratar no JS e o envento JS onfocus que coloca o elemento em foco -->
+        <br><input type="submit" value="Enviar"> <!-- Abre e fecha a tag input com tipo submit -->
+    </div> <!-- Fecha a tag div-->
+        <script> //Abre a tag script para inserir códigos JS no documento
+            function foco() { // Função foco para colocar o elemento em foco ao selecionar a caixa de texto.
+            document.getElementById('focoinput').style.backgroundColor = "#FFC0CB";
+            }   
+            function foco1() {
+            document.getElementById('focoinput1').style.backgroundColor = "#FFC0CB";
+            }   
+            function foco2() {
+            document.getElementById('focoinput2').style.backgroundColor = "#FFC0CB";
+            }   
+            function foco3() {
+            document.getElementById('focoinput3').style.backgroundColor = "#FFC0CB";
+            }     
+            function funcenvio() { // Função funcenvio para apresetar um alerta ao clicar no botão enviar do formulário.
+                alert("Enviado");
+            }
+            function entrada() { // Função entrada para apresetar um texto quando o usuário selecionar uma opção no botão de select, apresentará a opção que o mesmo selecionou.
+                var value = document.getElementById("selecaoentrada").value;
+                document.getElementById("selecao").innerHTML = "Você selecionou " + value;
+            }
+        </script> <!-- Fechamento da tag script -->
+    
+    </form> <!-- Fechamento da tag form -->
+    
+</body>
+</html>
